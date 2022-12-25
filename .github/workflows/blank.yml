@@ -27,4 +27,4 @@ jobs:
           curl 'https://bbs.uestc.edu.cn/forum.php' --cookie "${{ secrets.COOKIE1 }}"
           curl 'https://bbs.uestc.edu.cn/forum.php' --cookie "${{ secrets.COOKIE2 }}"
           sleep 5m
-          down
+          done
