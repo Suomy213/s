@@ -24,7 +24,7 @@ jobs:
         run: |
           for i in {1..66}
           do
-          curl -k 'https://202.115.22.221:443' --cookie "${{ secrets.COOKIE1 }}" --socks5 124.223.62.14:1080 
-          curl -k 'https://202.115.22.221:443' --cookie "${{ secrets.COOKIE2 }}" --socks5 124.223.62.14:1080 
+          curl -k 'https://202.115.22.221:443' --cookie "${{ secrets.COOKIE1 }}" --socks5 124.223.62.14:1080 2>/dev/null
+          curl -k 'https://202.115.22.221:443' --cookie "${{ secrets.COOKIE2 }}" --socks5 124.223.62.14:1080 2>/dev/null
           sleep 5m
           done
