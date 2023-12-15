@@ -26,5 +26,6 @@ jobs:
           do
           curl -k 'https://bbs.uestc.edu.cn' --cookie "${{ secrets.COOKIE1 }}" --socks5 levi123:${{secrets.PASSWORD}}@flebing.me:1080 >/dev/null
           curl -k 'https://bbs.uestc.edu.cn' --cookie "${{ secrets.COOKIE2 }}" --socks5 levi123:${{secrets.PASSWORD}}@flebing.me:1080 >/dev/null
+          curl -k 'https://bbs.uestc.edu.cn' --cookie "${{ secrets.COOKIE3 }}" --socks5 levi123:${{secrets.PASSWORD}}@flebing.me:1080 >/dev/null
           sleep 5m
           done
