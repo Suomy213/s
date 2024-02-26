@@ -24,8 +24,8 @@ jobs:
         run: |
           for i in {1..66}
           do
-          curl -k 'https://202.115.22.221' --cookie "${{ secrets.COOKIE1 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
-          curl -k 'https://202.115.22.221' --cookie "${{ secrets.COOKIE2 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
-          curl -k 'https://202.115.22.221' --cookie "${{ secrets.COOKIE3 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
+          curl -k 'https://222.197.166.2' --cookie "${{ secrets.COOKIE1 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
+          curl -k 'https://222.197.166.2' --cookie "${{ secrets.COOKIE2 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
+          curl -k 'https://222.197.166.2' --cookie "${{ secrets.COOKIE3 }}" --socks5 levi123:${{secrets.PASSWORD}}@20.89.142.47:1080 >/dev/null
           sleep 5m
           done
