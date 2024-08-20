@@ -24,8 +24,8 @@ jobs:
         run: |
           for i in {1..66}
           do
-          curl 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE1 }}" >/dev/null
-          curl 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE2 }}" >/dev/null
-          curl 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE3 }}" >/dev/null
+          curl --resolve bbs.uestc.edu.cn:443:222.197.166.2 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE1 }}" >/dev/null
+          curl --resolve bbs.uestc.edu.cn:443:222.197.166.2 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE2 }}" >/dev/null
+          curl --resolve bbs.uestc.edu.cn:443:222.197.166.2 'https://bbs.uestc.edu.cn' --http1.1 --cookie "${{ secrets.COOKIE3 }}" >/dev/null
           sleep 5m
           done
